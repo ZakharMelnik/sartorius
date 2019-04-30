@@ -1,0 +1,417 @@
+* {
+  outline: 0 !important;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+@font-face {
+ font-family: GothamPro;
+ src: url(fonts/GothamPro.ttf);
+}
+@font-face {
+ font-family: GothamProBold;
+ src: url(fonts/GothamPro-Bold.ttf);
+}
+@font-face {
+ font-family: Ubuntu-Bold;
+ src: url(fonts/Ubuntu-Bold.ttf);
+}
+
+
+body {
+font-family: GothamPro, Tahoma;
+}
+
+/* Header */
+
+header {
+ background: #fff;
+ padding: 35px 0;
+}
+
+a.header-menu {
+	font-size: 18px;
+	text-decoration: none;
+	color: #000;
+	font-weight: 700;
+}
+
+.header-menu img {
+	margin-right: 15px;
+}
+
+.header-contacts a	{
+color: #4f4f4f;
+text-decoration: none;
+font-size: 18px;
+}
+
+.header-contacts a:hover,
+a.header-menu:hover	{
+color: #FFB900;
+transition: .1s;
+}
+
+.header-contacts a:last-child {
+	margin-left: 35px;
+}
+
+
+/* banner */
+
+.banner {
+	background: rgba(0,0,0,0.2) url(../img/banner.jpg) no-repeat center top;
+	background-blend-mode: darken; 
+	color: #fff;
+	padding: 90px 0 150px;
+}
+
+.banner h1 {
+	font-size: 48px;
+	margin-bottom: 40px;
+	position: relative;
+	margin-left: 30px;
+}
+
+.banner h1:before {
+	content: '';
+	width: 7px;
+	height: 100%;
+	position: absolute;
+	background-color: #ffb81c;
+	left: -30px;
+}
+
+.banner p {
+	font-size: 24px;
+	margin-bottom: 40px;
+}
+
+.banner a {
+	display: inline-block;
+	color: #000;
+	padding: 15px 35px;
+	background-color: #ffb81c;
+	border-radius: 50px;
+	text-decoration: none;
+	font-size: 18px;
+	position: relative;
+}
+
+.banner a:hover {
+	padding: 15px 30px 15px 35px;
+	transition: .2s;
+	background-color: #fdc64c;
+}
+
+.banner a:hover img {
+	margin-left: 5px;
+	transition: .2s;
+}
+
+
+/* category */
+
+.category {
+	margin-bottom: 90px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.category-block {
+	flex: 1;
+	text-align: center;
+	padding: 90px 20px;
+	position: relative;
+}
+
+.category-block.laboratory {
+	background: url(../img/category/background-laboratory.jpg) no-repeat center center;
+	background-size: cover;
+}
+.category-block.biotechnology {
+	background: url(../img/category/background-biotechnology.jpg) no-repeat center center;
+	background-size: cover;
+}
+.category-block.industrialControl {
+	background: url(../img/category/background-industrialControl.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.category-block img {
+	margin-bottom: 50px;
+}
+
+
+.category-block h3 {
+	font-family: Ubuntu-Bold;
+	color: #fff;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+.category-block p {
+	display: inline-block;
+	font-size: 18px;
+	color: #ffb81c;
+	border-bottom: 1px solid rgba(255,184,28,0.5);
+	line-height: 20px;
+	cursor: pointer;
+}
+
+/* popular-products */
+
+.popular-products {
+	margin-bottom: 125px;
+}
+
+.popular-products .col-lg-3 {
+	padding-right: 1px;
+ padding-left: 1px;
+}
+
+.popular-products h2 {
+	font-family: Ubuntu-bold, sans-serif;
+	margin-bottom: 90px;
+	font-size: 40px;
+}
+
+.popular-product {
+	border: 1px solid #eaeaea;
+	padding: 20px 20px 45px;
+	text-align: center;
+	box-shadow: 0px 3px 10px 2px #eaeaea;
+}
+
+.popular-product:hover {
+	box-shadow: 0px 3px 25px 15px #eaeaea;
+	transition: .2s;
+}
+
+.popular-product .container-img {
+	height: 160px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.popular-product .container-img img {
+	
+}
+
+.popular-product p {
+	font-size: 18px;
+	color: #4f4f4f;
+	margin-bottom: 60px;
+}
+
+.popular-product a {
+	font-size: 18px;
+	border: 2px solid #ffb81c;
+	border-radius: 50px;
+	text-decoration: none;
+	color: #000;
+	padding: 7px 25px;
+	display: inline-block;
+}
+
+.popular-product a:hover {
+	background-color: #ffb81c;
+	transition: .1s;
+}
+
+
+/* About */
+
+.about {
+	margin-bottom: -60px;
+}
+
+.about h2 {
+	font-family: Ubuntu-bold, sans-serif;
+	margin-bottom: 30px;
+	font-size: 40px;
+}
+
+.about .subtitle {
+	border-left: 7px solid #ffb81c;
+	padding-left: 60px;
+	margin-bottom: 30px;
+}
+
+.about .subtitle h3 {
+	color: #000;
+	font-size: 30px;
+}
+
+.about .subtitle p {
+	color: #4f4f4f;
+	letter-spacing: -1px;
+	margin-bottom: 0;
+}
+
+.about p {
+	color: #4f4f4f;
+	font-size: 18px;
+	margin-bottom: 50px;
+	letter-spacing: -1px;
+}
+
+.about .video-block {
+	position: relative;
+	width: 270px;
+}
+
+.about .video-block .video-after {
+	position: absolute;
+	top: -20px;
+	right: -105px;
+	background: #ffb81c;
+	padding: 15px 20px;
+}
+
+.video-block h2 {
+	margin-bottom: 0;
+	
+}
+.video-block p {
+	margin-bottom: 0;
+}
+
+.about .container-img {
+	display: flex;
+	justify-content: flex-end;
+	overflow: hidden;
+}
+
+
+/* Users */
+
+.users {
+	text-align: center;
+	padding: 110px 0 100px;
+	background: url(../img/background-users.jpg) no-repeat center center;
+}
+
+.users h2 {
+	font-family: Ubuntu-Bold;
+	font-size: 40px;
+	color: #fff;
+	margin-bottom: 25px;
+}
+
+.users a {
+	font-size: 18px;
+	border: 2px solid #ffb81c;
+	border-radius: 50px;
+	text-decoration: none;
+	color: #000;
+	padding: 7px 25px;
+	display: inline-block;
+}
+
+.users a:hover {
+	background-color: #ffb81c;
+	transition: .1s;
+}
+
+
+/* Footer */
+
+footer {
+	background-color: #414141;
+	padding: 130px 0 90px;
+}
+
+footer h4 {
+	font-family: Ubuntu-Bold;
+	color: #fff;
+	font-size: 18px;
+	margin: 20px 0;
+}
+
+footer a {
+	font-size: 16px;
+	color: #aaa;
+	position: relative;
+	margin-bottom: 15px;
+	display: block;
+	max-width: 240px;
+}
+
+footer a:hover {
+	color: #aaa;
+	-padding-left: 2px;
+	-text-decoration: none;
+}
+
+footer .header-contacts {
+	display: flex;
+}
+
+footer .header-contacts a {
+	color: #fff;
+}
+
+.footer-dop {
+	margin: 100px 0 50px;
+
+}
+
+footer .copyright {
+	color: #919191;
+	font-size: 18px;
+}
+
+
+.hide-laboratory,
+.hide-biotechnology,
+.hide-industrialControl {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: #ffb81c;
+	display: none;
+}
+
+
+.hide-block {
+	justify-content: center;
+	padding-top: 40px;
+}
+
+.hide-block .title {
+	display: flex;
+	align-self: center;
+	justify-content: center;
+}
+
+.hide-block .hide-block_img img {
+	margin: -10px 40px 0 0;
+}
+
+.hide-block_text {
+	text-align: left;
+}
+
+.hide-block_text h3 {
+	margin-bottom: 25px;
+}
+.hide-block_text p {
+	color: #fff;
+	cursor: unset;
+	margin-bottom: 10px;
+	font-size: 18px;
+	display: block;
+}
+
