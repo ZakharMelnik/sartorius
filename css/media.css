@@ -23,9 +23,11 @@ header .header-contacts {
 .about .container-img {
 	display: none;
 }
+
 .about .video-block {
 	margin: 0 auto;
 }
+
 .footer-dop {
  margin: 30px 0 30px;
 }
@@ -89,7 +91,11 @@ a.header-menu:hover {
 }
 
 header .header-contacts {
-	text-align: center;
+	display: flex;
+ flex-direction: row;
+ justify-content: center;
+ flex-wrap: wrap;
+ align-items: center;
 }
 .banner {
 	padding: 80px 0 100px;
