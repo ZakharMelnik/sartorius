@@ -354,6 +354,7 @@ footer a:hover {
 
 footer .header-contacts {
 	display: flex;
+	justify-content: flex-end;
 }
 
 footer .header-contacts a {
