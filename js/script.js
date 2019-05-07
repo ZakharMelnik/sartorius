@@ -42,4 +42,23 @@ $(".category .industrialControl").mouseleave(function () {
 			$('.hide-industrialControl').css({'display' : 'none'});
 });
 
+
+
+$(".header-menu").click(function(e){
+			e.preventDefault();
+			$("#menu").toggleClass("show");
+		});
+		$("#menu a").click(function(event){
+			event.preventDefault();
+			if($(this).next('ul').length){
+				$(this).next().toggle('fast');
+				$(this).children('i:last-child').toggleClass('fa-caret-down fa-caret-left');
+			}
+});
+$(document).on('click','.milk-shadow',function(){
+	$(".header-menu").click();
+});
+
+
+
 });

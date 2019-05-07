@@ -38,6 +38,10 @@ font-family: GothamPro, Tahoma;
 header {
  background: #fff;
  padding: 35px 0;
+ position: fixed;
+ width: 100%;
+ z-index: 99;
+ box-shadow: 0px 0px 10px -5px #000;
 }
 
 a.header-menu {
@@ -47,7 +51,8 @@ a.header-menu {
 	font-weight: 700;
 }
 
-.header-menu img {
+.header-menu img,
+.left-menu img {
 	margin-right: 15px;
 }
 
@@ -74,7 +79,7 @@ transition: .1s;
 	background: rgba(0,0,0,0.2) url(../img/banner.jpg) no-repeat center center;
 	background-blend-mode: darken; 
 	color: #fff;
-	padding: 90px 0 90px;
+	padding: 200px 0 90px;
 }
 
 .banner h1 {
@@ -327,7 +332,8 @@ transition: .1s;
 	margin-bottom: 25px;
 }
 
-.users a {
+.users a,
+.recommended-block a {
 	font-size: 18px;
 	border: 2px solid #ffb81c;
 	border-radius: 50px;
@@ -337,7 +343,8 @@ transition: .1s;
 	display: inline-block;
 }
 
-.users a:hover {
+.users a:hover,
+.recommended-block a:hover {
 	background-color: #ffb81c;
 	transition: .1s;
 }
@@ -502,11 +509,13 @@ footer .copyright {
 }
 
 .category-about .container-img {
-	width: 90%;
+	width: 80%;
+	margin: 0 auto;
 }
 
 .category-about .container-img > img {
 	width: 100%;
+	height: 100%;
 }
 
 .container-more {
@@ -529,4 +538,119 @@ a.more {
 a.more:hover {
 	transition: .2s;
 	background-color: #fdc64c;
+}
+
+.milk-shadow {
+ position: fixed;
+ top:0; right:0; left:0;
+ height: 0;
+ background-color: #000;
+ opacity: 0;
+ -webkit-transition: opacity .5s;
+ transition: opacity: .5s;
+ z-index: 99
+}
+
+#menu.show ~ .milk-shadow {height: 100%; opacity: .3;}
+
+#menu {
+ position: fixed;
+ background-color: #222;
+ height: 100%;
+ z-index: 999;
+ width: 280px;
+ color: #bbb;
+ top: 0;
+ -webkit-transition: all 0.3s ease;
+ -moz-transition: all 0.3s ease;
+ transition: all 0.3s ease;
+ opacity: 1;
+ display: none;
+}
+
+.menu_header {
+	margin-bottom: 120px;
+}
+
+.menu_header .left-menu {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.show {
+	display: block!important;
+}
+
+.container-menu {
+	padding-top: 40px;
+	padding-left: 25px;
+}
+
+a.left-menu {
+	font-size: 18px;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 700;
+}
+
+.container-menu h4 {
+	font-family: Ubuntu-Bold;
+	color: #fff;
+	font-size: 18px;
+	margin: 20px 0;
+}
+
+.container-menu a {
+	font-size: 16px;
+	color: #aaa;
+	margin-bottom: 15px;
+	display: block;
+	max-width: 240px;
+}
+
+.container-menu a:hover {
+	color: #aaa;
+}
+
+
+.menu_nav a:hover {
+	text-decoration: none;
+	margin-left: 2px;
+	transition: .1s;
+
+}
+
+
+.recommended-block {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 25px;
+	box-shadow: 0px 3px 10px 2px #eaeaea;
+	margin-bottom: 20px;
+	flex-wrap: wrap;
+}
+
+.recommended-block .container-img {
+	width: 230px;
+}
+
+.recommended-block .container-img img {
+	margin: 0 auto;
+	display: block;
+}
+
+.recommended-block p {
+	max-width: 320px;
+}
+
+.recommended_title h4 {
+	font-family: GothamProBold;
+	font-size: 18px;
+}
+
+.recommended {
+	margin-bottom: 150px;
 }
